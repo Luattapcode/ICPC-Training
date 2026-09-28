@@ -53,8 +53,6 @@ namespace sub1
 
         FOR(i, 1, n) sort(all(vec[i]));
 
-        int maxSize = 0;
-        FOR(i, 1, n) maxi(maxSize, (int)str[i].size()); 
         FOR(i, 1, n) {
             int sz = str[i].size();
             
@@ -79,7 +77,7 @@ namespace sub1
             maxi(res, dp[n][msk]);
         }
         cout << (!res ? -1 : res);
-    }
+    }   
 }
 
 main()
